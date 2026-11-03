@@ -357,10 +357,12 @@ input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;bac
 .final{padding:160px 0 60px;text-align:center}
 .final .lede{max-width:560px;margin:22px auto 0}
 .team{display:flex;justify-content:center;gap:14px;margin-top:48px;flex-wrap:wrap}
-.member{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:18px 28px 18px 18px;text-align:left;min-width:300px;display:flex;align-items:center;gap:18px}
-.member img{width:84px;height:84px;border-radius:50%;object-fit:cover;flex:none;border:2px solid var(--line)}
-.member b{display:block;font-family:var(--display);font-size:22px;letter-spacing:-.02em}
-.member span{display:block;color:var(--muted);font-size:14px}
+.member{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:12px 12px 24px;text-align:left;width:340px;display:flex;flex-direction:column;gap:18px;transition:transform .3s,border-color .3s}
+.member:hover{transform:translateY(-4px);border-color:rgba(43,193,100,.45)}
+.member img{display:block;width:100%;height:auto;aspect-ratio:4/5;border-radius:20px;object-fit:cover}
+.member > div{padding:0 12px}
+.member b{display:block;font-family:var(--display);font-size:26px;letter-spacing:-.025em}
+.member span{display:block;color:var(--muted);font-size:15px;margin-top:4px}
 .member a{display:block;margin-top:6px;color:var(--green);font-size:14px;text-decoration:none}
 details.sources{max-width:900px;margin:56px auto 0;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:6px 24px}
 details.sources summary{cursor:pointer;padding:16px 0;font-weight:600;list-style:none;display:flex;justify-content:space-between}
@@ -408,7 +410,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;
   .gain-grid{grid-template-columns:1fr}
   .asset-grid{grid-template-columns:1fr 1fr}
   .metrics{grid-template-columns:1fr}
-  .member{width:100%;min-width:0}
+  .member{width:100%;max-width:360px}
   .risks li{grid-template-columns:1fr;gap:2px}
   .step p{margin-left:0}
   .strip li{font-size:18px}
@@ -791,8 +793,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;
     <h2 class="h-xl reveal">Dinner, <span class="tile" data-tile style="background:var(--green)"><i class="on"><svg style="stroke:#fff"><use href="#i-check"/></svg></i><i><svg style="stroke:#fff"><use href="#i-moon"/></svg></i></span> decided.</h2>
     <p class="lede reveal">Woolworths Tonight. A student concept for the Woolworths Future of Retail Case Competition 2026.</p>
     <div class="team reveal">
-      <div class="member"><img src="harsh.jpg" alt="Harsh Mishra" width="84" height="84" loading="lazy"><div><b>Harsh Mishra</b><span>Software Engineering, University of Sydney</span></div></div>
-      <div class="member"><img src="nishchaya.jpg" alt="Nishchaya Khatri" width="84" height="84" loading="lazy"><div><b>Nishchaya Khatri</b><span>Team member</span></div></div>
+      <div class="member"><img src="harsh.jpg" alt="Harsh Mishra" width="720" height="900" loading="lazy"><div><b>Harsh Mishra</b><span>Software Engineering<br>University of Sydney</span></div></div>
+      <div class="member"><img src="nishchaya.jpg" alt="Nishchaya Khatri" width="720" height="900" loading="lazy"><div><b>Nishchaya Khatri</b><span>Software Engineering<br>University of Sydney</span></div></div>
     </div>
     <details class="sources reveal">
       <summary>Sources</summary>
